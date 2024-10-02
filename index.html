@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Text Editor with Drag, Undo & Redo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-toolbar">
+        <button id="undo-btn" class="toolbar-button" title="Undo">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/undo.png" alt="Undo Icon"/>
+            <span>Undo</span>
+        </button>
+        <button id="redo-btn" class="toolbar-button" title="Redo">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/redo.png" alt="Redo Icon"/>
+            <span>Redo</span>
+        </button>
+    </div>
+
+    <div class="text-container" id="text-container">
+        <div class="dotted-line vertical-line" id="vertical-line"></div>
+        <div class="dotted-line horizontal-line" id="horizontal-line"></div>
+    </div>
+
+    <div class="bottom-toolbar">
+        <div class="toolbar">
+            <select id="font-selector" title="Select Font Family">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Tahoma">Tahoma</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Impact">Impact</option>
+            </select>
+
+            <button id="decrease-font" title="Decrease Font Size">-</button>
+            <input type="text" id="font-size" value="18" title="Font Size">
+            <button id="increase-font" title="Increase Font Size">+</button>
+
+            <button id="bold-btn" title="Bold">B</button>
+            <button id="italic-btn" title="Italic">I</button>
+            <button id="underline-btn" title="Underline">U</button>
+
+            <button id="add-text-btn" title="Add Text">T Add Text</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
